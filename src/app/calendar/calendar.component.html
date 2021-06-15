@@ -1,0 +1,8 @@
+<div class="calendar">
+  <div *ngIf="isEuDate">
+    <p>{{date | date: 'MM/dd/yy'}}</p>
+  </div>
+  <div *ngIf="!isEuDate">
+    <p>{{date | date: 'dd.MM.yyyy'}}</p>
+  </div>
+</div>

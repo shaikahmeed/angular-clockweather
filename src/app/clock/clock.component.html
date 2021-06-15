@@ -1,0 +1,7 @@
+<div class="clock">
+  <div *ngIf="!isFullFormat">
+    <p>{{date | date: 'hh:mm'}}</p>
+  </div>
+  <div *ngIf="isFullFormat">
+    <p>{{date | date: 'hh:mm:ss'}}</p>
+  </div>

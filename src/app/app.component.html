@@ -1,0 +1,16 @@
+<app-clock
+*ngIf="isClock"
+(click)="leftClickFunc()"
+[date] ="date"
+[isFullFormat]="isFullFormat"
+(contextmenu)="rightClickFunc()"></app-clock>
+
+<app-calendar
+*ngIf="!isClock"
+(click)="leftClickFunc()"
+[date] ="date"
+[isEuDate]="isEuDate"
+(contextmenu)="rightClickFunc()"></app-calendar>
+
+<app-weather
+></app-weather>
